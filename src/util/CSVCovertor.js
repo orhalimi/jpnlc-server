@@ -1,9 +1,8 @@
-const csv = require('csvtojson/v2');
+import csv from 'csvtojson/v2';
 
 const convert =  async function (path){
+  console.log(csv)
   return await csv().fromFile(path);
 }
 
-module.exports = {
-convert
-}
+export default convert;

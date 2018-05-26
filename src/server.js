@@ -1,10 +1,17 @@
 
 //const init = require('./util/init')
-import * as conjuction from 'jp-conjugation';
+
 import * as vocal from './util/vocabilaries';
+import conjuct, {isIchidan} from './util/conjuction';
 
 
-vocal.initVocal();
+vocal.initVocal()
+  .then(() =>{
+    const Verblist = vocal.getVerbsVocab();
+    const ichidan = Verblist.filter(v => isIchidan(v));
+    console.log(conjuct(Verblist[0]));
+  })
+
 
 
 /*

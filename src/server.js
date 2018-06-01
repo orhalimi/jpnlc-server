@@ -2,14 +2,14 @@
 //const init = require('./util/init')
 
 import * as vocal from './util/vocabilaries';
-import conjuct, {isIchidan} from './util/conjuction';
+import conjuct, {isIchidan} from './features/conjuction';
 
 
 vocal.initVocal()
   .then(() =>{
     const Verblist = vocal.getVerbsVocab();
     const ichidan = Verblist.filter(v => isIchidan(v));
-    console.log(conjuct(Verblist[0]));
+    console.log(conjuct(Verblist[1]));
   })
 
 

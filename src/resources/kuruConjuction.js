@@ -1,107 +1,107 @@
 const kuruConjuctTable = [
   {
     form:'くる',
-    name:'plain'
+    id:'plain'
   },
   {
     form:'きます',
-    name:'polite affirmative'
+    id:'polite affirmative'
   }, 
   {
     form:'こない',
-    name:'plain negative'
+    id:'plain negative'
   },   
   {
     form:'きません',
-    name:'polite negative'
+    id:'polite negative'
   },
   {
     form:'きた',
-    name:'past tense'
+    id:'past tense'
   },
   {
     form:'きました',
-    name:'past polite affirmative'
+    id:'past polite affirmative'
   },
   {
     form:'こなかった',
-    name:'past plain negative'
+    id:'past plain negative'
   },
   {
     form:'きませんでした',
-    name:'past polite negative'
+    id:'past polite negative'
   },
   {
     form:'きて',
-    name:'te form'
+    id:'te form'
   },
   {
     form:'きている (te iru)',
-    name:'te iru'
+    id:'te iru'
   },
   {
     form:'くれば',
-    name:'hypothetical'
+    id:'hypothetical'
   },
   {
     form:'こなければ',
-    name:'negetive hypothetical'
+    id:'negetive hypothetical'
   },
   {
     form:'きたら',
-    name:'tara'
+    id:'tara'
   },
   {
     form:'こなかったら',
-    name:'negetive tara'
+    id:'negetive tara'
   },
   {
     form:'きたい',
-    name:'desire'
+    id:'desire'
   },
   {
     form:'こられる',
-    name:'passive'
+    id:'passive'
   },
   {
     form:'こられる',
-    name:'potential'
+    id:'potential'
   },
   {
     form:'こさせる',
-    name:'causative'
+    id:'causative'
   },
   {
     form:'こさせられる',
-    name:'causative passive'
+    id:'causative passive'
   },
   {
     form:'こよう',
-    name:'volitional'
+    id:'volitional'
   },
   {
     form:'きなさい',
-    name:'sai commanding'
+    id:'sai commanding'
   },
   {
     form:'こい',
-    name:'commanding'
+    id:'commanding'
   },
   {
     form:'きなさい',
-    name:'na commanding'
+    id:'na commanding'
   },
   {
     form:'くるな',
-    name:'negetive na commanding'
+    id:'negetive na commanding'
   },
   {
     form:'きてください',
-    name:'requesting'
+    id:'requesting'
   },
   {
     form:'こないでください)',
-    name:'negative request'
+    id:'negative request'
   },
 ];
 

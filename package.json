@@ -11,7 +11,9 @@
   "author": "Or Halimi",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "csvtojson": "^1.1.12",
+    "express": "^4.16.3",
     "jp-conjugation": "0.0.3",
     "jsonexport": "^2.1.0",
     "unofficial-jisho-api": "^1.0.5"

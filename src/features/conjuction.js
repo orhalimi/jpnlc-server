@@ -30,111 +30,111 @@ const conjuct = (verbObj, forceIchidan=false) => {
 
 export default conjuct;
 
-//some with the same title need to change it
+//some with the same name need to change it
 export const supportedForms = 
   [
     {
-      title:'plain',
-      name:'plain'
+      name:'plain',
+      id:'plain'
     },
     {
-      title:'plain polite',
-      name:'polite affirmative'
+      name:'plain polite',
+      id:'polite affirmative'
     }, 
     {
-      title:'plain negative',
-      name:'plain negative'
+      name:'plain negative',
+      id:'plain negative'
     },   
     {
-      title:'plain polite negative',
-      name:'polite negative'
+      name:'plain polite negative',
+      id:'polite negative'
     },
     {
-      title:'past',
-      name:'past tense'
+      name:'past',
+      id:'past tense'
     },
     {
-      title:'past polite',
-      name:'past polite affirmative'
+      name:'past polite',
+      id:'past polite affirmative'
     },
     {
-      title:'past negative',
-      name:'past plain negative'
+      name:'past negative',
+      id:'past plain negative'
     },
     {
-      title:'past polite negative',
-      name:'past polite negative'
+      name:'past polite negative',
+      id:'past polite negative'
     },
     {
-      title:'て (te)',
-      name:'te form'
+      name:'て (te)',
+      id:'te form'
     },
     {
-      title:'ている (te iru)',
-      name:'te iru'
+      name:'ている (te iru)',
+      id:'te iru'
     },
     {
-      title:'ば (hypothetical)',
-      name:'hypothetical'
+      name:'ば (hypothetical)',
+      id:'hypothetical'
     },
     {
-      title:'negetive ば (hypothetical)',
-      name:'negetive hypothetical'
+      name:'negetive ば (hypothetical)',
+      id:'negetive hypothetical'
     },
     {
-      title:'たら (Conditional)',
-      name:'tara'
+      name:'たら (Conditional)',
+      id:'tara'
     },
     {
-      title:'negetive たら (Conditional)',
-      name:'negetive tara'
+      name:'negetive たら (Conditional)',
+      id:'negetive tara'
     },
     {
-      title:'たい form (desire)',
-      name:'desire'
+      name:'たい form (desire)',
+      id:'desire'
     },
     {
-      title:'passive',
-      name:'passive'
+      name:'passive',
+      id:'passive'
     },
     {
-      title:'potential',
-      name:'potential'
+      name:'potential',
+      id:'potential'
     },
     {
-      title:'causative (させる)',
-      name:'causative'
+      name:'causative (させる)',
+      id:'causative'
     },
     {
-      title:'causative (させる)　passive',
-      name:'causative passive'
+      name:'causative (させる)　passive',
+      id:'causative passive'
     },
     {
-      title:'volitional (しよう)',
-      name:'volitional'
+      name:'volitional (しよう)',
+      id:'volitional'
     },
     {
-      title:'さい form　(authoritative)',
-      name:'sai commanding'
+      name:'さい form　(authoritative)',
+      id:'sai commanding'
     },
     {
-      title:'commanding',
-      name:'commanding'
+      name:'commanding',
+      id:'commanding'
     },
     {
-      title:'na commanding',
-      name:'na commanding'
+      name:'na commanding',
+      id:'na commanding'
     },
     {
-      title:'negetive na commanding',
-      name:'negetive na commanding'
+      name:'negetive na commanding',
+      id:'negetive na commanding'
     },
     {
-      title:'requesting (ください)',
-      name:'requesting'
+      name:'requesting (ください)',
+      id:'requesting'
     },
     {
-      title:'negative request (でください)',
-      name:'negative request'
+      name:'negative request (でください)',
+      id:'negative request'
     },
   ];

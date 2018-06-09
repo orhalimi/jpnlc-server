@@ -12,7 +12,6 @@ var corsOptions = {
 const server = express();
 server.use(cors(corsOptions))
 
-
 server.use(bodyParser.json());
 //server.use(bodyParser.urlencoded({ extended: false }));
 

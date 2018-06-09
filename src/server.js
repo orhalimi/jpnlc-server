@@ -1,9 +1,18 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+import cors from 'cors'
 import apiRoutes from './routes/apiRoutes'
 
 const port = 8080; //TODO: add config file
+var corsOptions = {
+  origin: 'http://localhost:3000',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
 const server = express();
+server.use(cors(corsOptions))
+
+
 server.use(bodyParser.json());
 //server.use(bodyParser.urlencoded({ extended: false }));
 

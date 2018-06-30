@@ -2,20 +2,24 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import apiRoutes from './routes/apiRoutes'
+import path from 'path'
 
-const port = 8080; //TODO: add config file
+
+const server = express();
+server.set('port', (process.env.PORT || 8080))
+
 var corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: `http://localhost:${server.get('port')}`,
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
-const server = express();
 server.use(cors(corsOptions))
 
 server.use(bodyParser.json());
-//server.use(bodyParser.urlencoded({ extended: false }));
+//server.use(bodyParser.urlencoded({ extended: false })); 
 
-server.use('/', apiRoutes);
+server.use('/api', apiRoutes);
+
 
 server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   if (err) {
@@ -25,8 +29,9 @@ server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   }
 });
 
-console.log(`listening on ${port}`);
-server.listen(port);
+server.listen(server.get('port'), () => { 
+  console.log(`Listening on ${server.get('port')}`)
+})
 
 
 //const init = require('./util/init')

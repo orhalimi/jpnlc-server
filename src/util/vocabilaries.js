@@ -1,8 +1,10 @@
 import {resolve as parthResolve} from 'path';
 import CSVCovertor from './CSVCovertor';
 import jishoApi from 'unofficial-jisho-api';
+import path from 'path';
 
-const csvFilePath = parthResolve("./src/resources/Core2k6k10kWithType.csv");
+
+const csvFilePath = parthResolve(path.join(__dirname, 'src/resources/Core2k6k10kWithType.csv'));
 const jisho = new jishoApi();
 let vocab10k, vocab10kVerbs;
 

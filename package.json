@@ -17,14 +17,14 @@
     "express": "^4.16.3",
     "jp-conjugation": "0.0.3",
     "jsonexport": "^2.1.0",
-    "unofficial-jisho-api": "^1.0.5"
-  },
-  "devDependencies": {
+    "unofficial-jisho-api": "^1.0.5",
+    "cors": "^2.8.4",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1",
-    "cors": "^2.8.4",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb": "^16.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^1.17.5"
   },
   "engines":{

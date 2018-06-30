@@ -8,7 +8,7 @@ import path from 'path'
 const server = express();
 server.set('port', (process.env.PORT || 8080))
 
-server.use(cors())
+server.use(cors());
 
 server.use(bodyParser.json());
 //server.use(bodyParser.urlencoded({ extended: false })); 

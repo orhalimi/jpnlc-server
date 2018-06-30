@@ -8,10 +8,18 @@ import path from 'path'
 const server = express();
 server.set('port', (process.env.PORT || 8080))
 
-var corsOptions = {
-  origin: `http://localhost:${server.get('port')}`,
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+const whitelist = [`http://localhost:${server.get('port')}`, 'https://jpnlc.herokuapp.com']
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
 }
+
 
 server.use(cors(corsOptions))
 

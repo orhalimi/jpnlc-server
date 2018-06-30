@@ -7,6 +7,8 @@ exports.getVerbsVocab = exports.getVocab = exports.jishoSearch = exports.initVoc
 
 var _path = require('path');
 
+var _path2 = _interopRequireDefault(_path);
+
 var _CSVCovertor = require('./CSVCovertor');
 
 var _CSVCovertor2 = _interopRequireDefault(_CSVCovertor);
@@ -19,7 +21,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-const csvFilePath = (0, _path.resolve)("./src/resources/Core2k6k10kWithType.csv");
+const csvFilePath = (0, _path.resolve)(_path2.default.join(__dirname, 'src/resources/Core2k6k10kWithType.csv'));
 const jisho = new _unofficialJishoApi2.default();
 let vocab10k, vocab10kVerbs;
 

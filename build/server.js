@@ -26,7 +26,7 @@ const server = (0, _express2.default)();
 server.set('port', process.env.PORT || 8080);
 
 var corsOptions = {
-  origin: `http://localhost:3000`,
+  origin: `http://localhost:${server.get('port')}`,
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
@@ -36,10 +36,6 @@ server.use(_bodyParser2.default.json());
 //server.use(bodyParser.urlencoded({ extended: false })); 
 
 server.use('/api', _apiRoutes2.default);
-
-const staticFiles = _express2.default.static(_path2.default.join(__dirname, '../../jpnlc-client/build'));
-server.use(staticFiles);
-server.use('/*', staticFiles);
 
 server.use((err, req, res, next) => {
   // eslint-disable-line no-unused-vars

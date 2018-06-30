@@ -8,7 +8,7 @@ import path from 'path'
 const server = express();
 server.set('port', (process.env.PORT || 8080))
 
-const whitelist = [`http://localhost:${server.get('port')}`, 'https://jpnlc.herokuapp.com']
+const whitelist = [`http://localhost:${server.get('port')}`]
 
 const corsOptions = {
   origin: function (origin, callback) {

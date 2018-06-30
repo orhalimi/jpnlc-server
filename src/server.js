@@ -8,20 +8,7 @@ import path from 'path'
 const server = express();
 server.set('port', (process.env.PORT || 8080))
 
-const whitelist = [`http://localhost:${server.get('port')}`]
-
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
-
-
-server.use(cors(corsOptions))
+server.use(cors())
 
 server.use(bodyParser.json());
 //server.use(bodyParser.urlencoded({ extended: false })); 
